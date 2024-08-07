@@ -34,6 +34,4 @@ body{
   height: 100%;
 
 }
-.app_container{
-  height:calc(100vh - 44px);
-}
+
