@@ -1,0 +1,46 @@
+.sidebar_container
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#20202A;
+    height:calc(100vh - 35px);
+    width:35px
+}
+.new_container{
+    display: flex;
+    flex-direction: column;
+}
+.on_btn{
+    color: #20202A;
+}
+.sidebar_container span{
+    padding: 1rem .5rem;
+}
+
+.home_icon{
+    color:#7190F2;
+    font-size: 1.25rem;
+}
+
+.graph_icon{
+    font-size: 1.25rem;
+    color:grey;
+}
+.battery_icon{
+    font-size: 1.25rem;
+    color:grey;  
+}
+.battery_horizon{
+    font-size: 1.25rem;
+    color:grey;   
+}
+.shooping_icon{
+    font-size: 1.25rem;
+    color:grey;   
+}
+@media( max-width:468px)
+{
+    .sidebar_container{
+        height:calc(100vh - 45px)
+    }
+}

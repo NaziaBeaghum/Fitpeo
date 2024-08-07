@@ -1,0 +1,279 @@
+.mainbar_container{
+     width: 100%;
+     padding: 1rem;
+     overflow: hidden;
+     background-color: #20202A;
+     color: #f4f4f4;
+}
+.mainbar_container p{
+    margin-bottom: .5rem;
+}
+.grid_container{
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: minmax(200px,2fr) minmax(100px,1fr); /* Two columns: first one is 1fr, second is 3fr */
+  grid-template-rows: 140px 200px 400px;
+  grid-template-areas:
+    "flex profit"
+    "activity circle"
+    "orders feedback ";
+  gap: 20px; /* Gap between grid items */
+  
+}
+.flexbox {
+    grid-area: flex;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .flexbox div{
+    width: 150px;
+    height: 100px;
+    background-color:rgb(70, 66, 66);
+    color:#fff;
+   
+    border-radius: 8px;
+    padding: .5rem;
+    flex-flow: row nowrap;
+    padding-top: .85rem;
+    
+  }
+  .flexbox ul{
+    list-style: none;
+    font-size: .4rem;
+    font-weight: 200;
+  }
+  .flexbox ul li{
+    padding: .25rem;
+  }
+  .list_number{
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .item_total{
+    margin-top: .75rem;
+    
+  }
+  .img_bag{
+   background-color:#4AD2AC;
+   display: inline;
+   color: #902D66;
+   font-size: 1rem;
+   border-radius: 5px;
+  padding-bottom: .5rem;
+  }
+  
+  .net_profit {
+    grid-area: profit;
+    background-color:hsl(240, 3%, 18%);
+    padding-top: 1rem;
+    border-radius: 8px;
+    
+  }
+  .net_profit ul{
+    list-style: none;
+  }
+  .net_value {
+    font-size: .5rem;
+   
+  }
+  .dollar_value{
+    font-size: 2rem;
+    margin: .75rem 0;
+   
+  }
+  
+  .activity{
+    grid-area:activity;
+    padding: 15px;
+    background-color:hsl(240, 3%, 18%);
+  }
+  .activity_img{
+    height: 120px;
+  }
+  
+  .circle {
+    grid-area:circle; /* This area is not included in grid-template-areas */
+    background-color:hsl(240, 3%, 18%);
+    padding: 30px 10px 0 10px;
+  }
+  .circle p{
+     margin-left: .75rem; 
+   
+    font-size: .85rem;
+    
+  }
+  .flex__bars{
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+  }
+  .left_arrow{
+    background-color: #4E4E54;
+    border-radius: 50%;
+  }
+  .orders {
+    grid-area: orders;
+    background-color:hsl(240, 3%, 18%);
+    padding: 20px;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+  }
+  td, th {
+    
+    text-align: left;
+    padding: 5px;
+  }
+  th{
+    font-weight: 400;
+    font-size: .75rem;
+    padding: 10px;
+  }
+  td{
+    font-weight:100;
+    font-size: .75rem;
+  }
+  .delivery_btn{
+    background-color: rgb(18, 123, 18);
+    color: #f4f4f4;
+    padding: .25rem;
+    border-radius: 8px;
+  }
+  .cancel_btn{
+    background-color:hsl(0, 68%, 30%);
+    color: #f4f4f4;
+    padding: .25rem;
+    border-radius: 8px;
+  }
+  .flex__items{
+    display: flex;
+    align-items: center;
+   margin-bottom:.75rem ;
+  }
+  .flex__items p{
+    margin-bottom: -.5rem;
+    
+  }
+  .feedback{
+    grid-area: feedback;
+    padding: 1.5rem;
+    background-color:hsl(240, 3%, 18%);
+    
+  }
+  .feedback_para{
+   font-size:.5rem ; 
+   margin-top: .5rem;
+  padding-bottom: .75rem;
+   border-bottom: 1px solid grey;
+  }
+  
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+
+  }
+
+  .btn{
+    color: #f4f4f4;
+    background-color: #4E4E54;
+    font-size: .5rem;
+    padding: .25rem;
+    border-radius: 8px;
+  }
+  .activity_img{
+    width:clamp(100px,50vw,450px)
+  }
+  .blue_color{
+    color: rgb(87, 87, 189);
+  }
+  .flex_profit{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .item1 ul{
+    margin-bottom: 0;
+  }
+  .item2 ul{
+    margin-bottom:0;
+  }
+  .item2 li{
+    margin-bottom: 0;
+  }
+  .margin_left{
+    margin-left: 25px;
+  }
+
+  .circle_img{
+    border-radius: 50%;
+  }
+  .feedback_items{
+    font-size: .75rem;
+  }
+  .filled{
+    color: yellow;
+  }
+  .margin_top{
+    margin-top: .75rem;
+  }
+
+  
+@media( max-width:800px)
+{
+  .mainbar_container{
+    overflow: scroll;
+  }
+    .grid_container{
+        display: block;
+        width: 100%;
+      
+    }
+    
+    .net_profit,.activity,.circle,.orders,.feedback,.flexbox{
+      margin-bottom: 1rem;
+    }
+    .dollar_value{
+      font-size: 1.5rem;
+     
+    }
+    .circle{
+      padding: 15px;
+    }
+}
+
+@media(max-width:480px){
+  .flexbox{
+    display:grid;
+    grid-template-columns: repeat(2,120px);
+    gap: 10px;
+  }
+  
+  .flexbox div{
+    height: 100px;
+    width: 120px;
+  }
+  td,th{
+    font-size: .3rem;
+  }
+  .delivery_btn{
+   
+    padding: .15rem;
+    border-radius: 5px;
+    font-size: .3rem;
+  }
+  .cancel_btn{
+   
+    padding: .15rem;
+    border-radius: 5px;
+    font-size: .3rem;
+  }
+
+}
