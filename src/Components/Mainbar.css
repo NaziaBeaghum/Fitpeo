@@ -1,7 +1,7 @@
 .mainbar_container{
      width: 100%;
      padding: 1rem;
-     overflow: hidden;
+     
      background-color: #20202A;
      color: #f4f4f4;
 }
@@ -12,12 +12,12 @@
   border-radius: 20px;
   display: grid;
   grid-template-columns: minmax(200px,2fr) minmax(100px,1fr); /* Two columns: first one is 1fr, second is 3fr */
-  grid-template-rows: 140px 200px 400px;
+  grid-template-rows: 120px 150px 380px;
   grid-template-areas:
     "flex profit"
     "activity circle"
     "orders feedback ";
-  gap: 20px; /* Gap between grid items */
+  gap: 10px; /* Gap between grid items */
   
 }
 .flexbox {
@@ -30,7 +30,7 @@
   }
   .flexbox div{
     width: 150px;
-    height: 100px;
+    height: 80px;
     background-color:rgb(70, 66, 66);
     color:#fff;
    
@@ -46,11 +46,11 @@
     font-weight: 200;
   }
   .flexbox ul li{
-    padding: .25rem;
+    padding: .15rem;
   }
   .list_number{
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: .75rem;
   }
   .item_total{
     margin-top: .75rem;
@@ -62,7 +62,7 @@
    color: #902D66;
    font-size: 1rem;
    border-radius: 5px;
-  padding-bottom: .5rem;
+ 
   }
   
   .net_profit {
@@ -80,29 +80,29 @@
    
   }
   .dollar_value{
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin: .75rem 0;
    
   }
   
   .activity{
     grid-area:activity;
-    padding: 15px;
+    padding: 10px;
     background-color:hsl(240, 3%, 18%);
   }
   .activity_img{
-    height: 120px;
+    height: 100px;
   }
   
   .circle {
     grid-area:circle; /* This area is not included in grid-template-areas */
     background-color:hsl(240, 3%, 18%);
-    padding: 30px 10px 0 10px;
+    padding:  10px;
   }
   .circle p{
      margin-left: .75rem; 
    
-    font-size: .85rem;
+    font-size: .5rem;
     
   }
   .flex__bars{
@@ -127,12 +127,12 @@
   td, th {
     
     text-align: left;
-    padding: 5px;
+    padding: 3px;
   }
   th{
     font-weight: 400;
     font-size: .75rem;
-    padding: 10px;
+    padding: 5px;
   }
   td{
     font-weight:100;
@@ -161,14 +161,14 @@
   }
   .feedback{
     grid-area: feedback;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color:hsl(240, 3%, 18%);
     
   }
   .feedback_para{
    font-size:.5rem ; 
-   margin-top: .5rem;
-  padding-bottom: .75rem;
+   margin-top: .2rem;
+  padding-bottom: .5rem;
    border-bottom: 1px solid grey;
   }
   
